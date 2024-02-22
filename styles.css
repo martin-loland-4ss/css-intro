@@ -4,3 +4,13 @@
 .debug{
     border: 1px solid red;
 }
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header{
+    display: flex;
+    
+}

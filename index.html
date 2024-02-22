@@ -8,49 +8,51 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">Overview</a>
-            <a href="#">Integrity</a>
-            <a href="#">Motions</a>
-            <a href="#">Fatigue</a>
-            <a href="#">Support</a>
-        </nav>
-        <div>Admin Mode</div>
-    </header>
-    <main>
-        <div class="module-header">
-            <h1>Integrity</h1>
-            <small>Data last updated 15 minutes ago</small>
-        </div>
-        <div class="comments">
-            <h3>Comments</h3>
-        </div>
-        <div class="content-area">
-            <div class="figure">
-                <div class="figure-header">
-                    <div class="fig-head-top">
-                        <h2>BOP Resonance (Tn)</h2>
-                        <h2>2.73</h2>
-                        <div>Help</div>
-                    </div>
-                    <small>Current BOP Resonance [sec]</small>
-                </div>
-                <div id="plot1"></div>
+    <div class="wrapper debug">
+        <header>
+            <nav>
+                <a href="#">Overview</a>
+                <a href="#">Integrity</a>
+                <a href="#">Motions</a>
+                <a href="#">Fatigue</a>
+                <a href="#">Support</a>
+            </nav>
+            <div>Admin Mode</div>
+        </header>
+        <main>
+            <div class="module-header">
+                <h1>Integrity</h1>
+                <small>Data last updated 15 minutes ago</small>
             </div>
-            <div class="figure">
-                <div class="figure-header">
-                    <div class="fig-head-top">
-                        <h2>BOP Pivot Point</h2>
-                        <h2>-3.30</h2>
-                        <div>Help</div>
-                    </div>
-                    <small>Current point relative to wellhead datum [m]</small>
-                </div>
-                <div id="plot2"></div>
+            <div class="comments">
+                <h3>Comments</h3>
             </div>
-        </div>
-    </main>
+            <div class="content-area">
+                <div class="figure">
+                    <div class="figure-header">
+                        <div class="fig-head-top">
+                            <h2>BOP Resonance (Tn)</h2>
+                            <h2>2.73</h2>
+                            <div>Help</div>
+                        </div>
+                        <small>Current BOP Resonance [sec]</small>
+                    </div>
+                    <div id="plot1"></div>
+                </div>
+                <div class="figure">
+                    <div class="figure-header">
+                        <div class="fig-head-top">
+                            <h2>BOP Pivot Point</h2>
+                            <h2>-3.30</h2>
+                            <div>Help</div>
+                        </div>
+                        <small>Current point relative to wellhead datum [m]</small>
+                    </div>
+                    <div id="plot2"></div>
+                </div>
+            </div>
+        </main>
+    </div>
     <script src="script.js"></script>    
 </body>
 </html>
