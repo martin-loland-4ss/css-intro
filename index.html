@@ -6,9 +6,10 @@
     <title>My Web Page</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <div class="wrapper debug">
+    <div class="wrapper">
         <header>
             <nav>
                 <a href="#">Overview</a>
@@ -24,31 +25,39 @@
                 <h1>Integrity</h1>
                 <small>Data last updated 15 minutes ago</small>
             </div>
-            <div class="comments">
+            <div class="comments frame">
                 <h3>Comments</h3>
             </div>
             <div class="content-area">
-                <div class="figure">
+                <div class="figure frame">
                     <div class="figure-header">
                         <div class="fig-head-top">
                             <h2>BOP Resonance (Tn)</h2>
                             <h2>2.73</h2>
-                            <div>Help</div>
+                            <span class="material-symbols-outlined">
+                                help
+                            </span>
                         </div>
-                        <small>Current BOP Resonance [sec]</small>
+                        <div class="fig-head-bottom">
+                            <small>Current BOP Resonance [sec]</small>
+                        </div>
                     </div>
-                    <div id="plot1"></div>
+                    <div id="plot1" class="plot"></div>
                 </div>
-                <div class="figure">
+                <div class="figure frame">
                     <div class="figure-header">
                         <div class="fig-head-top">
                             <h2>BOP Pivot Point</h2>
                             <h2>-3.30</h2>
-                            <div>Help</div>
+                            <span class="material-symbols-outlined">
+                                help
+                            </span>
                         </div>
-                        <small>Current point relative to wellhead datum [m]</small>
+                        <div class="fig-head-bottom">
+                            <small>Current point relative to wellhead datum [m]</small>
+                        </div>
                     </div>
-                    <div id="plot2"></div>
+                    <div id="plot2" class="plot"></div>
                 </div>
             </div>
         </main>

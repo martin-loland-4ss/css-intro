@@ -25,7 +25,7 @@ var layout = {
     },
     margin: {
         l: 50,
-        r: 0,
+        r: 5,
         b: 0,
         t: 0,
         pad: 0
