@@ -7,31 +7,22 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
 }
 
 h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 0.75rem;
 }
 
 h3 {
     font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
 }
 
 /* Paragraph styles */
 p {
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 1rem;
-}
-
-/* List styles */
-ul, ol {
-    margin-bottom: 1rem;
 }
 
 li {
@@ -39,3 +30,6 @@ li {
     line-height: 1.5;
 }
 
+small{
+    font-size: .75rem;
+}

@@ -1,2 +1,90 @@
 @import url('reset.css');
 @import url('typography.css');
+@import url('variables.css');
+
+.debug{
+    border: 1px solid red;
+}
+
+.wrapper{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navButton{
+    padding: var(--margin-m);
+    color: var(--gray-dark);
+}
+
+.navButton:hover{
+    color: var(--green);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-m);
+}
+
+.moduleHeader{
+    display: flex;
+    align-items: baseline;
+    gap: var(--margin-m);
+}
+
+.frame{
+    border: 2px solid var(--gray);
+    border-radius: .25rem;
+}
+
+.comments{
+    padding: var(--margin-m);
+    min-height: 5rem;
+}
+
+.moduleContent{
+    display: grid;
+    gap: var(--margin-m);
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 50rem) {
+    .moduleContent {
+      grid-template-columns: 1fr; /* Change to single column layout */
+    }
+  }
+
+.figureCard{
+    flex-grow: 1;
+    min-width: 20rem;
+}
+
+.figureHeader{
+    background-color: var(--gray-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: var(--margin-m);
+    flex-wrap: wrap;
+}
+
+.figureCurrent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--margin-s);
+}
+
+.plot{
+    height: 300px;
+}

@@ -4,11 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
-    <h1>Header</h1>
-    <p>Welcome to the site</p>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <a class="navButton" href="#">Overview</a>
+                <a class="navButton" href="#">Integrity</a>
+                <a class="navButton" href="#">Motions</a>
+                <a class="navButton" href="#">Fatigue</a>
+                <a class="navButton" href="#">Support</a>
+            </nav>
+            <div>Admin Mode</div>
+        </header>
+        <main>
+            <div class="moduleHeader">
+                <h1>Integrity</h1>
+                <small>Data Last Updated 15 minutes ago</small>
+            </div>
+            <div class="comments frame">
+                <h3>Comments</h3>
+                <p>No current comments</p>
+            </div>
+            <div class="moduleContent">
+                <div class="figureCard frame">
+                    <div class="figureHeader">
+                        <h2>BOP Resonance</h2>
+                        <div class="figureCurrent">
+                            <h2>2.73</h2>
+                            <small>Current BOP Resonance [sec]</small>
+                        </div>
+                        <div>
+                            Help
+                        </div>
+                    </div>
+                    <div id="plot1" class="plot">
+                    </div>
+                </div>
+                <div class="figureCard frame">
+                    <div class="figureHeader">
+                        <h2>BOP</h2>
+                        <div class="figureCurrent">
+                            <h2>2.73</h2>
+                            <small>Current [sec]</small>
+                        </div>
+                        <div>
+                            Help
+                        </div>
+                    </div>
+                    <div id="plot2" class="plot">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>  
 </body>
 </html>
